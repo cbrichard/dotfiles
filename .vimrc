@@ -1,6 +1,9 @@
 " enable syntax highlighting
 syntax enable
 
+" Set encoding
+set encoding=utf-8
+
 set backspace=2
 
 " show line numbers
@@ -31,7 +34,7 @@ set laststatus=2
 set termencoding=utf-8
 let g:Powerline_symbols = "fancy"
 let g:airline_powerline_fonts = 1
-"let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='unicode'
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
@@ -50,23 +53,6 @@ let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
 
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-" old vim-powerline symbols
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-let g:airline_symbols.linenr = '⭡'
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
